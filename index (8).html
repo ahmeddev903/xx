@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar with Info</title>
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+}
+nav{
+  background:#66a6ff;
+  padding:15px;
+  display:flex;
+  justify-content:space-around;
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:100;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav a:hover{
+  color:#ffd700;
+}
+
+section{
+  padding:100px 20px 60px 20px;
+  min-height:100vh;
+}
+#home{
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color:#fff;
+}
+#about{
+  background:#f0f2f5;
+  color:#333;
+}
+#services{
+  background:#fff;
+  color:#333;
+}
+#contact{
+  background:#f0f2f5;
+  color:#333;
+}
+h1{
+  margin-bottom:20px;
+}
+p{
+  max-width:700px;
+  line-height:1.6;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h1>Welcome to Our Website</h1>
+  <p>This is a simple modern web page with navigation bar. Scroll down to learn more about our services and contact info.</p>
+</section>
+
+<section id="about">
+  <h1>About Us</h1>
+  <p>We are a team of passionate developers and designers. Our mission is to create beautiful and responsive websites for our clients, focusing on user experience and modern design trends.</p>
+</section>
+
+<section id="services">
+  <h1>Our Services</h1>
+  <p>We offer a wide range of services including web development, UI/UX design, mobile app development, and digital marketing. We ensure every project is delivered with quality and attention to detail.</p>
+</section>
+
+<section id="contact">
+  <h1>Contact Us</h1>
+  <p>📞 Phone: 03237002607 <br>✉ Email: ahmedaliawan399@gmail.com <br>📍 Address: Shahodi Garhi, Pakistan</p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    background-color: #fff;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    padding-bottom: 20px;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+
+  .card h2 {
+    margin: 15px 0 5px 0;
+    font-size: 22px;
+    color: #333;
+  }
+
+  .card p {
+    margin: 5px 20px;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .card .contact {
+    margin-top: 10px;
+    color: #777;
+    font-size: 14px;
+  }
+
+  .card .social {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 10px;
+  }
+
+  .card .social a {
+    text-decoration: none;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 0.3s;
+    font-weight: bold;
+  }
+
+  .card .social a.facebook { background: #3b5998; }
+  .card .social a.twitter { background: #1da1f2; }
+  .card .social a.instagram { background: #e1306c; }
+
+  .card .social a:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 400px) {
+    .card {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <!-- Replace src URL with your real picture if needed -->
+  <img src="img/ahmed.jpeg" alt="Profile Picture">
+  <h2>Ahmad Ali</h2>
+  <p class="contact">📞 03237002607</p>
+  <p class="contact">✉ ahmedaliawan399@gmail.com</p>
+
+  <div class="social">
+    <a href="#" class="facebook">F</a>
+    <a href="#" class="twitter">T</a>
+    <a href="#" class="instagram">I</a>
+  </div>
+</div>
+
+</body>
+</html>

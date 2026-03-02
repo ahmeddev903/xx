@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Info Card</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to top, #a1c4fd, #c2e9fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.weather-card:hover {
+  transform: translateY(-10px);
+}
+
+.weather-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.weather-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.weather-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.weather-card .temperature {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ff8c00;
+}
+
+.weather-card .info {
+  font-size: 14px;
+  color: #777;
+}
+</style>
+</head>
+<body>
+
+<div class="weather-card">
+  <img src="https://i.ibb.co/3mRkL8R/sunny.png" alt="Weather Icon">
+  <h2>Shahodi Garhi</h2>
+  <p class="temperature">28°C</p>
+  <p>Sunny</p>
+  <p class="info">Humidity: 55% | Wind: 12 km/h</p>
+</div>
+
+</body>
+</html>

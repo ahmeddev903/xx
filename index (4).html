@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Card</title>
+<style>
+body{
+  font-family: Arial,sans-serif;
+  background:#f0f2f5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+.card{
+  background:#fff;
+  border-radius:15px;
+  padding:25px;
+  width:250px;
+  text-align:center;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+.card h2{
+  margin-bottom:10px;
+}
+.card .price{
+  font-size:28px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+.card button{
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  background:#66a6ff;
+  color:#fff;
+  cursor:pointer;
+}
+.card button:hover{
+  background:#547acc;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Basic Plan</h2>
+  <p class="price">$19/month</p>
+  <p>Access to basic features</p>
+  <button>Subscribe</button>
+</div>
+
+</body>
+</html>
